@@ -11,11 +11,12 @@ stages {
     }
   }
 
-  stage ('test') {
+  stage('Docker Test') {
     steps {
-    echo "testing the code"
+        sh 'docker version'
     }
-  }
+}
+
   stage ('package') {
     steps {
     echo "building the package"
