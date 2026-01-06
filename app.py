@@ -3,6 +3,8 @@ import os
 
 app = Flask(__name__)
 
+version = os.environ.get("APP_VERSION", "UNKNOWN")
+
 import logging
 logging.basicConfig(level=logging.INFO)
 
